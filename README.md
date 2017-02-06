@@ -1,4 +1,4 @@
-IoT-Lab cli-tools
+IoT-Lab cli-tools                     [![build][build-icon]][build-page]
 =================
 
 IoT-LAB cli-tools provide a basic set of operations for managing IoT-LAB
@@ -40,3 +40,6 @@ Installing cli-tools automatically fetches additional dependencies as needed.
 
 Further documentation: https://github.com/iot-lab/iot-lab/wiki/CLI-Tools
 
+
+[build-icon]: https://travis-ci.org/iot-lab/cli-tools.svg?branch=master
+[build-page]: https://travis-ci.org/iot-lab/cli-tools
