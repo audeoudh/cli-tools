@@ -1,0 +1,15 @@
+language: python
+
+install:
+  - cat /dev/zero | ssh-keygen -q -N ""
+
+script:
+  - pip install .
+  - auth-cli -u $IOTLAB_USER -p $IOTLAB_PASS
+  - py.test -k integration/test_auth_ssh_key
+
+
+env:
+  global:
+  - secure: EW3Ve6k43clvQxLKW5bEhWGvv3eI7WqT+Zbo6a3n1JW0gKEkxIyW1HXkh0wxwElS0/x9cY+8zOuwqS/mGwfiRk/fLUYgeWrFGLnpHtCpk7lSGjPhBfqL7D4Kgq5ZWqHy1NR+nbXIVOI9e0GYogVLpnUGDLpdZbwrX2XzlbXJhzM=
+  - secure: VgpwHONcTjuJOdnSWHUooxrKqcG+SaKHfZkENYZ+V/KTJdC4yGsb6Lve4TK3PHPrPEXTRnYp2jxXiAsm+hvTgyMhcRWMqZ1aNjjYELTHj5wki/xs9irNVE+r1qMscayn88Agei5zf6poS2DQkeWkop0iuRuE9JrO6/6zZWR7SPs=
